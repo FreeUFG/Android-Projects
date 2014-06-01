@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="13dp" >
+    
+    <ImageView android:id="@+id/iconeCategoria"
+        	   android:layout_width="40dp"
+        	   android:layout_height="40dp"
+        	   android:layout_marginLeft="5dp"
+        	   android:contentDescription="@null"
+        	   android:src="@drawable/ic_launcher" />
+    
+    <TextView android:id="@+id/tituloCategoria"
+        	  android:layout_width="wrap_content"
+        	  android:layout_height="wrap_content"
+        	  android:layout_toRightOf="@+id/iconeCategoria"        	  
+        	  android:textSize="15sp"
+        	  android:layout_marginTop="2dp"
+        	  android:layout_marginLeft="5dp" />
+    
+    <TextView android:id="@+id/descricaoCategoria"
+        	  android:layout_width="match_parent"
+        	  android:layout_height="wrap_content"
+        	  android:layout_toRightOf="@+id/iconeCategoria"
+        	  android:layout_marginTop="23dp"        	  
+        	  android:layout_marginLeft="5dp"
+        	  android:textSize="12sp" />
+    
+    <TextView android:id="@+id/qtdImagens"
+        	  android:layout_width="wrap_content"
+        	  android:layout_height="wrap_content"
+        	  android:layout_toRightOf="@+id/tituloCategoria"        	  
+        	  android:textSize="12sp"
+        	  android:layout_marginTop="5dp"
+        	  android:layout_marginLeft="100dp" />
+
+</RelativeLayout>

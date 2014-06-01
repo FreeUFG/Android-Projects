@@ -1,31 +1,27 @@
 package com.bcc_ufg.atlashistologia;
 
 import com.bcc_ufg.atlashistologia.R;
+import com.bcc_ufg.atlashistologia.core.CarregaCategoria;
+import com.bcc_ufg.atlashistologia.core.CategoriaAdapter;
 
 import android.os.Bundle;
-import android.app.Activity;
-import android.content.Intent;
-import android.view.Menu;
-import android.view.View;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.ListView;
 
-public class ListarCategoria extends Activity {
+public class ListarCategoria extends ActionBarActivity {
 
+	private ListView listaCategoria;
+	
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_listar_categoria);
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.listar_categoria, menu);
-		return true;
-	}
-	
-	public void activityVisualizarCategoria(View view) {
-		Intent intent = new Intent(this, VisualizarCategoria.class);
-		startActivity(intent);
+		
+		getSupportActionBar().setTitle("Atlas Histologia");
+		
+		listaCategoria = (ListView) findViewById(R.id.listaCategoria);
+		
+		listaCategoria.setAdapter(new CategoriaAdapter(CarregaCategoria.getCategorias()));
 	}
 	
 }
