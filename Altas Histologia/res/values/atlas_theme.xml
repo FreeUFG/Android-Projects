@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="AtlasActionBarTheme"
+           parent="@style/Theme.AppCompat.Light" >
+                        
+        <item name="actionBarStyle">@style/AtlasActionBar</item>        
+    </style>
+    
+    <style name="AtlasActionBar"
+           parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse" >
+        
+        <item name="android:background">@drawable/action_bar_background</item>
+        <item name="background">@drawable/action_bar_background</item>
+    </style>
+</resources>

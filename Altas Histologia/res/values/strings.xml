@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Atlas</string>
-    <string name="action_bar_title">Atlas</string>
+    <string name="app_name">Atlas</string>    
+    <string name="action_bar_title">Atlas Histologia</string>    
+    <string name="action_settings">Configurações</string>
+    <string name="action_search">Procurar</string>
+    
     <string name="button_visualizar_categoria">Visualizar Categoria</string>
     <string name="button_visualizar_imagem">Visualizar Imagem</string>
     <string name="button_visualizar_historico">Visualizar Histórico</string>
     <string name="button_fazer_anotacoes">Fazer Anotações</string>
     <string name="label_anotacoes">Anotações</string>
-    <string name="action_settings">Configurações</string>
+        
     <string name="title_activity_action_bar_fragment">ActionBarFragment</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_lista_categoria_fragment">ListaCategoriaFragment</string>

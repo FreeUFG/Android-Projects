@@ -1,5 +1,7 @@
 package com.bcc_ufg.atlashistologia;
 
+import com.bcc_ufg.atlashistologia.R;
+
 import android.os.Bundle;
 import android.view.View;
 import android.app.Activity;
@@ -11,7 +13,7 @@ public class VisualizarImagem extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_visualizar_imagem);
-		// Show the Up button in the action bar.
+		// Show the Up button in the action bar.				
 	}
 
 	public void activityVisualizarHistorico(View view) {

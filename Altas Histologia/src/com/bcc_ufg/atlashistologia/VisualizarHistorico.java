@@ -1,5 +1,7 @@
 package com.bcc_ufg.atlashistologia;
 
+import com.bcc_ufg.atlashistologia.R;
+
 import android.os.Bundle;
 import android.view.View;
 import android.app.Activity;
