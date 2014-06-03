@@ -12,9 +12,11 @@ import android.widget.GridView;
 public class ImageAdapter extends BaseAdapter {
 
 	private Context mContext;
+	private int width;
 	
-	public ImageAdapter(Context c) {
+	public ImageAdapter(Context c, int width) {
 		mContext = c;
+		this.width = width;
 	}
 	
 	public int getCount() {
@@ -25,6 +27,10 @@ public class ImageAdapter extends BaseAdapter {
 		return null;
 	}
 	
+	public int getItemPosition(int position) {
+		return mThumbsIds[position];
+	}
+	
 	public long getItemId(int position) {
 		return 0;
 	}
@@ -32,8 +38,13 @@ public class ImageAdapter extends BaseAdapter {
 	public View getView(int position, View convertView, ViewGroup parent) {
 		ImageView imageView;
 		if(convertView == null) {
-			imageView = new ImageView(mContext);
-			imageView.setLayoutParams(new GridView.LayoutParams(150, 150));
+			imageView = new ImageView(mContext);	
+			
+			if(width >= 320) {
+				imageView.setLayoutParams(new GridView.LayoutParams(150, 150));
+			} else {
+				imageView.setLayoutParams(new GridView.LayoutParams(115, 115));
+			}
 			imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
 			imageView.setPadding(0,0,0,0);
 		} else {
@@ -44,7 +55,7 @@ public class ImageAdapter extends BaseAdapter {
 		return imageView;
 	}
 	
-	private Integer[] mThumbsIds = {
+	private int[] mThumbsIds = {
 			R.drawable.sample_0, R.drawable.sample_3,
 			R.drawable.sample_4, R.drawable.sample_5,
 			R.drawable.sample_6, R.drawable.sample_7,

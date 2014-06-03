@@ -31,10 +31,7 @@
         <activity
             android:name="com.bcc_ufg.atlashistologia.VisualizarImagem"
             android:label="@string/action_bar_title"
-            android:parentActivityName="com.bcc_ufg.atlashistologia.VisualizarCategoria" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.bcc_ufg.atlashistologia.VisualizarCategoria" />
+            android:parentActivityName="com.bcc_ufg.atlashistologia.VisualizarCategoria" >            
         </activity>
         <activity
             android:name="com.bcc_ufg.atlashistologia.VisualizarHistorico"
